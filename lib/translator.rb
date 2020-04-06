@@ -3,11 +3,12 @@ require 'yaml'
 
 def load_library(path)
   emo_ref = YAML.load_file(path)
-  library = {}
+  lib = {}
   eng = {}
   jp = {}
   emo_ref.each do | name , array |
-    library[name][eng][array[0]]
+    lib[name][eng][array[0]
+    lib[name][jp][array][1]
   end
 end
 
