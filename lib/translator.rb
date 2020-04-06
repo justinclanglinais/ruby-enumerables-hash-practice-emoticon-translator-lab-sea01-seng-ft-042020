@@ -6,9 +6,9 @@ def load_library(path)
   lib = {}
   eng = {}
   jp = {}
-  emo_ref.reduce do | name , array |
-    lib[name]["english:"][array(0)]
-    lib[name]["japanese:"][array(1)]
+  emo_ref.each do | name , array |
+    lib[name] = {"english:" array(0)}
+    lib[name] = {"japanese:" array(1)}
   end
   p lib
 end
