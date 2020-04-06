@@ -5,7 +5,6 @@ def load_library(path)
   emo_ref = YAML.load_file(path)
   lib = {}
 
-  end
   p lib
 end
 
