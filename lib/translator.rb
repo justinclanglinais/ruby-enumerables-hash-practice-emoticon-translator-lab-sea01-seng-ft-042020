@@ -25,6 +25,5 @@ def get_english_meaning(path,emo_jp)
     if lib[key][:japanese] == emo_jp
       return key.to_s
     end
-    return "Sorry, that emoticon was not found"
   end
 end
