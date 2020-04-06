@@ -11,15 +11,19 @@ def load_library(path)
 end
 
 def get_japanese_emoticon(path,emoticon)
-  
-  # code goes here
+  lib = load_library( path )
+  lib.each do | name , value |
+    if lib[name][:japanese] == emo_jp
+      p lib[name][:english]
+    end
+  end
 end
 
 def get_english_meaning(path,emo_jp)
   lib = load_library( path )
   lib.each do | name , value |
     if lib[name][:japanese] == emo_jp
-      p lib[name][:english]
+      p lib[name]
     end
   end
 end
