@@ -6,6 +6,7 @@ def load_library(path)
   library = {}
   emo_ref.each do |name|
     p name
+  end
   p emo_ref
 end
 
