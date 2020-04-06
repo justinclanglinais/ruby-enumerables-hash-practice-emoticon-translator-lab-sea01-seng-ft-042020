@@ -7,7 +7,7 @@ def load_library(path)
   english = {}
   japanese = {}
   emo_ref.each do | name, array |
-    name => {englsh, japanese}
+    name => {english, japanese}
   end
   p emo_ref
   
