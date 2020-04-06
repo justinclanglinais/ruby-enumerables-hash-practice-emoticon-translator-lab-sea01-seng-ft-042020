@@ -8,7 +8,7 @@ def load_library(path)
     lib[name] = {"english": array(0)}
     lib[name] = {"japanese": array(1)}
   end
-  
+  lib << emo_ref
   p lib
 end
 
