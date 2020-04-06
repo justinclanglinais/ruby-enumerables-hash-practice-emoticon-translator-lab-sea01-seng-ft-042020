@@ -4,6 +4,8 @@ require 'yaml'
 def load_library(path)
   emo_ref = YAML.load_file(path)
   library = {}
+  emo_ref.each do |name|
+    p name
   p emo_ref
 end
 
