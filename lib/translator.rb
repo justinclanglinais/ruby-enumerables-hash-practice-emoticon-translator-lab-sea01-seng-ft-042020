@@ -5,7 +5,7 @@ def load_library(path)
   emo_ref = YAML.load_file(path)
   library = {}
   emo_ref.each do | name , array |
-    name => { :english => array[0] , :japanese => array[1] }
+
   end
 end
 
