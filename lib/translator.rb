@@ -4,8 +4,6 @@ require 'yaml'
 def load_library(path)
   emo_ref = YAML.load_file(path)
   lib = {}
-  eng = {}
-  jp = {}
   emo_ref.each do | name , array |
     lib[name] = {"english:" array(0)}
     lib[name] = {"japanese:" array(1)}
