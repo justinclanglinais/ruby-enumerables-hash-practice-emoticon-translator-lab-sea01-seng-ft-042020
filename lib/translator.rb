@@ -9,7 +9,7 @@ def load_library(path)
   emo_ref.each do | name, face_array |
     library[name] = {}
   end
-  p emo_refc
+  p emo_ref
 end
 
 def get_japanese_emoticon
