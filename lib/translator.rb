@@ -7,8 +7,7 @@ def load_library(path)
   english = :english
   japanese = :japanese 
   emo_ref.each do | name, face_array |
-    library[name][english] = {}
-    library[name][japanese] = {}
+    library[name] = {}
   end
   p emo_ref
 end
