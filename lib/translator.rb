@@ -22,8 +22,8 @@ def get_english_meaning(path,emo_jp)
     lib[name] = { :english => array[0],:japanese => array[1] }
   end
   lib.each do | name , value |
-    if lib[name][:japanese[value]] == emo_jp
-      p lib[name][:english[value]]
+    if lib[name][:japanese] == emo_jp
+      p lib[name][:english]
     end
   end
 end
