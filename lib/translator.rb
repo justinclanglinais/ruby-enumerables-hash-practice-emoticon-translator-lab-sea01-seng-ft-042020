@@ -6,9 +6,7 @@ def load_library(path)
   library = {}
   emo_ref.each do | name , array |
     name => { :english => array[0] , :japanese => array[1] }
-    p name
   end
-  p emo_ref
 end
 
 def get_japanese_emoticon
