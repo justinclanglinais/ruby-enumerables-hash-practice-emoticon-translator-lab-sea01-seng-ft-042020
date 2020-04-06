@@ -6,7 +6,6 @@ def load_library(path)
   library = {}
   english = {}
   japanese = {}
-  p emo_ref
 end
 
 def get_japanese_emoticon
