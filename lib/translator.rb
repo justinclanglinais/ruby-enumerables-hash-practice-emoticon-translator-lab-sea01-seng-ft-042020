@@ -7,7 +7,6 @@ def load_library(path)
   emo_ref.map do | name , array |
     lib[:name] = { :english => array[0],:japanese => array[1] }
   end
-  p lib
   p emo_ref
 end
 
