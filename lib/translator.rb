@@ -16,11 +16,7 @@ def get_japanese_emoticon(path,emoticon)
 end
 
 def get_english_meaning(path,emo_jp)
-  emo_ref = YAML.load_file(path)
-  lib = {}
-  emo_ref.map do | name , array |
-    lib[name] = { :english => array[0],:japanese => array[1] }
-  end
+  load_library(path)
   lib.each do | name , value |
     if lib[name][:japanese] == emo_jp
       p lib[name][:english]
