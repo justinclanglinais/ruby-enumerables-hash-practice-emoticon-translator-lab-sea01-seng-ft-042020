@@ -1,4 +1,5 @@
 # require modules here
+require 'yaml'
 
 def load_library(path)
   emo_ref = YAML.load_file(path)
