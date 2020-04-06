@@ -5,7 +5,7 @@ def load_library(path)
   emo_ref = YAML.load_file(path)
   lib = {}
 
-  p lib
+  p emo_lib
 end
 
 def get_japanese_emoticon
