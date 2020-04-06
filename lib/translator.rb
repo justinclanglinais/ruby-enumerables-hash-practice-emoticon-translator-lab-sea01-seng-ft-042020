@@ -6,6 +6,10 @@ def load_library(path)
   library = {}
   english = {}
   japanese = {}
+  emo_ref.each do | name , array |
+    p name 
+    p array
+  end
   p emo_ref
 end
 
