@@ -10,7 +10,7 @@ def load_library(path)
     lib[name][eng][array][0]
     lib[name][jp][array][1]
   end
-  p emo_ref
+  p lib
 end
 
 def get_japanese_emoticon
