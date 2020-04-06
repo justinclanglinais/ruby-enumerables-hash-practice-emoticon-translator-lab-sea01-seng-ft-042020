@@ -15,7 +15,7 @@ def get_japanese_emoticon(path,emoticon)
   # code goes here
 end
 
-def get_english_meaning(emo_jp,path)
+def get_english_meaning(path,emo_jp)
   load_library( path )
   lib.each do | name , value |
     if lib[name][:japanese] == emo_jp
