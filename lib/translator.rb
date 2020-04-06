@@ -17,6 +17,7 @@ def get_japanese_emoticon(path,emo_en)
       return lib[name][:japanese]
     end
   end
+  return "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning(path,emo_jp)
