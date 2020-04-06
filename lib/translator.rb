@@ -4,8 +4,10 @@ require 'yaml'
 def load_library(path)
   emo_ref = YAML.load_file(path)
   library = {}
+  eng = {}
+  jp = {}
   emo_ref.each do | name , array |
-    name => [ :english => array[0] , :japanese => array[1] ]
+    library[name][eng][array[0]]
   end
 end
 
