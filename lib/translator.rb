@@ -5,9 +5,9 @@ def load_library(path)
   emo_ref = YAML.load_file(path)
   lib = {}
   emo_ref.map do | name , array |
-    lib[:name] = { :english => array[0],:japanese => array[1] }
+    lib[name] = { :english => array[0],:japanese => array[1] }
   end
-  p lib 
+  lib 
 end
 
 def get_japanese_emoticon(path,emoticon)
