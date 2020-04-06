@@ -4,11 +4,7 @@ require 'yaml'
 def load_library(path)
   emo_ref = YAML.load_file(path)
   library = {}
-  emo_ref.each do | name , face_array |
-    library[name]["english:"]
-    library[name]["japanese:"]
-  end
-  p library 
+  p emo_ref
 end
 
 def get_japanese_emoticon
