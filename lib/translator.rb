@@ -23,7 +23,7 @@ def get_english_meaning(path,emo_jp)
   lib = load_library( path )
   lib.each do | key , value |
     if lib[key][:japanese] == emo_jp
-      key.to_s
+      p key.to_s
     end
   end
 end
